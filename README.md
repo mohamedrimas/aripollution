@@ -144,3 +144,9 @@ interface enables individuals to input their desired destinations and receive vi
 routes that prioritize their health and safety. The solution is designed for real-life applications, 
 providing users with a comprehensive travel experience that not only emphasizes efficiency but 
 also takes into account the well-being of individuals by avoiding areas with high pollution levels. 
+![img1](https://github.com/user-attachments/assets/78b833fb-0644-46a6-b255-3817dcce9bcd)
+![img3](https://github.com/user-attachments/assets/e95cc76a-f831-4a17-b377-37657c911445)
+
+
+https://github.com/user-attachments/assets/7f9e99ed-073b-4b48-9eb3-18e61c103831
+
