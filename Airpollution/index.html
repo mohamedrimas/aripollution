@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Air Quality Monitoring</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="assets/css/videoslider.css">
+  <!-- Favicons -->
+  <link href="assets/img/imag6-removebg-preview.png" rel="icon">
+  <link href="assets/img/imag6-removebg-preview.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .gallery_1 * {
+      font-family: Nunito, sans-serif;
+    }
+
+    .gallery_1 .text-blk {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      line-height: 25px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    .gallery_1 img {
+      object-fit: cover;
+    }
+
+    .gallery_1 .responsive-container-block {
+      min-height: 75px;
+      height: fit-content;
+      width: 100%;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      justify-content: flex-start;
+    }
+
+    .gallery_1 .responsive-container-block.bigContainer {
+      padding-top: 10px;
+      padding-right: 30px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+    }
+
+    .gallery_1 .responsive-container-block.Container {
+      max-width: 1320px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      margin-top: 50px;
+      margin-right: auto;
+      margin-bottom: 50px;
+      margin-left: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery_1 .text-blk.heading {
+      font-size: 36px;
+      line-height: 45px;
+      font-weight: 600;
+      color: #242424;
+      text-align: center;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+
+    .gallery_1 .text-blk.subHeading {
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 750px;
+      color: #a3a3a3;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+    }
+
+    .gallery_1 .responsive-container-block.imgContainer {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      min-height: auto;
+      height: 720px;
+      position: relative;
+    }
+
+    .gallery_1 .overlay {
+      position: fixed;
+      background-image: initial;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-size: initial;
+
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: RGBA(71, 69, 69, 0.7);
+      height: 100%;
+      width: 100%;
+      max-height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 100;
+      display: none;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .gallery_1 .overlay-inner {
+      top: 50%;
+      right: 0px;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: initial;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-size: initial;
+
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: white;
+      max-width: 700px;
+      width: 100%;
+      padding-top: 35px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      position: relative;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      opacity: 1;
+    }
+
+    .gallery_1 .close {
+      position: absolute;
+      top: 9px;
+      right: 15px;
+      background-image: none;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-size: initial;
+
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: initial;
+      outline-color: initial;
+      outline-style: initial;
+      outline-width: 0px;
+      color: #474545;
+      border-top-width: 0px;
+      border-right-width: 0px;
+      border-bottom-width: 0px;
+      border-left-width: 0px;
+      border-top-style: initial;
+      border-right-style: initial;
+      border-bottom-style: initial;
+      border-left-style: initial;
+      border-top-color: initial;
+      border-right-color: initial;
+      border-bottom-color: initial;
+      border-left-color: initial;
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .gallery_1 .overlay-inner img {
+      height: auto;
+      width: 100%;
+      transform: none;
+    }
+
+    .gallery_1 .close:hover {
+      cursor: pointer;
+    }
+
+    .gallery_1 .project {
+      position: absolute;
+      width: 39.8%;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .wk-desk-1 {
+      width: 8.333333%;
+    }
+
+    .wk-desk-2 {
+      width: 16.666667%;
+    }
+
+    .wk-desk-3 {
+      width: 25%;
+    }
+
+    .wk-desk-4 {
+      width: 33.333333%;
+    }
+
+    .wk-desk-5 {
+      width: 41.666667%;
+    }
+
+    .wk-desk-6 {
+      width: 50%;
+    }
+
+    .wk-desk-7 {
+      width: 58.333333%;
+    }
+
+    .wk-desk-8 {
+      width: 66.666667%;
+    }
+
+    .wk-desk-9 {
+      width: 75%;
+    }
+
+    .wk-desk-10 {
+      width: 83.333333%;
+    }
+
+    .wk-desk-11 {
+      width: 91.666667%;
+    }
+
+    .wk-desk-12 {
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      .wk-ipadp-1 {
+        width: 8.333333%;
+      }
+
+      .wk-ipadp-2 {
+        width: 16.666667%;
+      }
+
+      .wk-ipadp-3 {
+        width: 25%;
+      }
+
+      .wk-ipadp-4 {
+        width: 33.333333%;
+      }
+
+      .wk-ipadp-5 {
+        width: 41.666667%;
+      }
+
+      .wk-ipadp-6 {
+        width: 50%;
+      }
+
+      .wk-ipadp-7 {
+        width: 58.333333%;
+      }
+
+      .wk-ipadp-8 {
+        width: 66.666667%;
+      }
+
+      .wk-ipadp-9 {
+        width: 75%;
+      }
+
+      .wk-ipadp-10 {
+        width: 83.333333%;
+      }
+
+      .wk-ipadp-11 {
+        width: 91.666667%;
+      }
+
+      .wk-ipadp-12 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .wk-tab-1 {
+        width: 8.333333%;
+      }
+
+      .wk-tab-2 {
+        width: 16.666667%;
+      }
+
+      .wk-tab-3 {
+        width: 25%;
+      }
+
+      .wk-tab-4 {
+        width: 33.333333%;
+      }
+
+      .wk-tab-5 {
+        width: 41.666667%;
+      }
+
+      .wk-tab-6 {
+        width: 50%;
+      }
+
+      .wk-tab-7 {
+        width: 58.333333%;
+      }
+
+      .wk-tab-8 {
+        width: 66.666667%;
+      }
+
+      .wk-tab-9 {
+        width: 75%;
+      }
+
+      .wk-tab-10 {
+        width: 83.333333%;
+      }
+
+      .wk-tab-11 {
+        width: 91.666667%;
+      }
+
+      .wk-tab-12 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .wk-mobile-1 {
+        width: 8.333333%;
+      }
+
+      .wk-mobile-2 {
+        width: 16.666667%;
+      }
+
+      .wk-mobile-3 {
+        width: 25%;
+      }
+
+      .wk-mobile-4 {
+        width: 33.333333%;
+      }
+
+      .wk-mobile-5 {
+        width: 41.666667%;
+      }
+
+      .wk-mobile-6 {
+        width: 50%;
+      }
+
+      .wk-mobile-7 {
+        width: 58.333333%;
+      }
+
+      .wk-mobile-8 {
+        width: 66.666667%;
+      }
+
+      .wk-mobile-9 {
+        width: 75%;
+      }
+
+      .wk-mobile-10 {
+        width: 83.333333%;
+      }
+
+      .wk-mobile-11 {
+        width: 91.666667%;
+      }
+
+      .wk-mobile-12 {
+        width: 100%;
+      }
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+    .footer {
+      position: relative;
+      width: 100%;
+      background: #3586ff;
+      min-height: 100px;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .social-icon,
+    .menu {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .social-icon__item,
+    .menu__item {
+      list-style: none;
+    }
+
+    .social-icon__link {
+      font-size: 2rem;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5s;
+    }
+
+    .social-icon__link:hover {
+      transform: translateY(-10px);
+    }
+
+    .menu__link {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5s;
+      text-decoration: none;
+      opacity: 0.75;
+      font-weight: 300;
+    }
+
+    .menu__link:hover {
+      opacity: 1;
+    }
+
+    .footer p {
+      color: #fff;
+      margin: 15px 0 10px 0;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .wave {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url("https://i.ibb.co/wQZVxxk/wave.png");
+      background-size: 1000px 100px;
+    }
+
+    .wave#wave1 {
+      z-index: 1000;
+      opacity: 1;
+      bottom: 0;
+      animation: animateWaves 4s linear infinite;
+    }
+
+    .wave#wave2 {
+      z-index: 999;
+      opacity: 0.5;
+      bottom: 10px;
+      animation: animate 4s linear infinite !important;
+    }
+
+    .wave#wave3 {
+      z-index: 1000;
+      opacity: 0.2;
+      bottom: 15px;
+      animation: animateWaves 3s linear infinite;
+    }
+
+    .wave#wave4 {
+      z-index: 999;
+      opacity: 0.7;
+      bottom: 20px;
+      animation: animate 3s linear infinite;
+    }
+
+    @keyframes animateWaves {
+      0% {
+        background-position-x: 1000px;
+      }
+
+      100% {
+        background-position-x: 0px;
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        background-position-x: -1000px;
+      }
+
+      100% {
+        background-positon-x: 0px;
+      }
+    }
+
+    * {
+      font-family: Nunito, sans-serif;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns that are equally spaced */
+      gap: 5px;
+      position: relative;
+    }
+
+    .gallery input {
+      position: absolute;
+      border: 2px solid #000;
+      border-radius: 50%;
+      inset: calc(50% - var(--s)/3);
+      cursor: pointer;
+      --g: linear-gradient(#000 0 0) no-repeat;
+      background: var(--g) 50%/var(--b, 0%) 3px, var(--g) 50%/3px var(--b, 0%);
+      transition: 1.5s;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .gallery>img {
+      width: 100%; /* Take the full width of each grid cell */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover;
+      transform: scale(1); /* Start at normal size */
+      filter: brightness(0.8);
+      pointer-events: none;
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .gallery>img:hover {
+      transform: scale(1.1); /* Slightly enlarge on hover */
+      filter: brightness(1);
+    }
+    
+
+    .gallery>img:nth-of-type(1) {
+      --i: 1;
+      --x: 150%;
+      --y: 150%;
+    }
+
+    .gallery>img:nth-of-type(2) {
+      --i: 2;
+      --x: 50%;
+      --y: 150%;
+    }
+
+    .gallery>img:nth-of-type(3) {
+      --i: 3;
+      --x: -50%;
+      --y: 150%;
+    }
+
+    .gallery>img:nth-of-type(4) {
+      --i: 4;
+      --x: 150%;
+      --y: 50%;
+    }
+
+    .gallery>img:nth-of-type(5) {
+      --i: 5
+    }
+
+    .gallery>img:nth-of-type(6) {
+      --i: 6;
+      --x: -50%;
+      --y: 50%;
+    }
+
+    .gallery>img:nth-of-type(7) {
+      --i: 7;
+      --x: 150%;
+      --y: -50%;
+    }
+
+    .gallery>img:nth-of-type(8) {
+      --i: 8;
+      --x: 50%;
+      --y: -50%;
+    }
+
+    .gallery>img:nth-of-type(9) {
+      --i: 9;
+      --x: -50%;
+      --y: -50%;
+    }
+
+    .gallery input:checked~img {
+      transform: scale(1.5);
+      filter: brightness(1);
+      pointer-events: initial;
+    }
+
+    .gallery>input:checked {
+      transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(45deg);
+      --b: 70%;
+    }
+    .video-container {
+      display: flex;
+      gap: 10px; /* Space between videos */
+    }
+  </style>
+
+</head>
+
+<body>
+  <script>
+    $(document).ready(function () {
+
+      $(`[unique-script-id="w-w-dm-id"] .btn-box`).click(function () {
+        $(this).parent().children(".overlay").show();
+
+      });
+
+
+      $(`[unique-script-id="w-w-dm-id"] .close`).click(function () {
+        $(".overlay").hide();
+      });
+    });
+
+  </script>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">airpollution@gmail.com</a>
+        <i class="bi bi-phone"></i> +94 775481997
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!--<h1 class="logo me-auto"><a href="index.html">The Taurus</a></h1>
+      -->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/imag6-removebg-preview.png" alt=""
+          class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#scope">Scope</a></li>
+          <li><a class="nav-link scrollto" href="#milestones">Milestones</a></li>
+          <li><a class="nav-link scrollto" href="#documents">Documentation</a></li>
+          <li><a class="nav-link scrollto" href="#presentations">Presentations</a></li>
+          <li><a class="nav-link scrollto" href="#banner">Gallary</a></li>
+          <li><a class="nav-link scrollto" href="#ourteam">Our Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section1 id="hero" class="home">
+    <video class="video-slide active"
+      src="assets/videos/18,744 Air pollution Stock Footage and Video Clips in 4K and UHD.mp4" autoplay muted
+      loop></video>
+    <video class="video-slide"
+      src="assets/videos/Car Smoke HD Stock Video - Download Video Clip Now - Pollution, Car, Air Pollution - iStock.mp4"
+      autoplay muted loop></video>
+    <video class="video-slide"
+      src="assets/videos/View Of The Highway At Sunset HD Stock Video - Download Video Clip Now - Ancient Civilization, Asphalt, Car - iStock.mp4"
+      autoplay muted loop></video>
+    <div class="content">
+      <h1 style="text-align: justify;"> Development of a predictive IOT-based system for real-time air quality
+        monitoring and route optimization</h1>
+      <p>A Cutting-Edge IoT System for Real-Time Air Quality Monitoring and Travel Route Optimization</p>
+      <a href="#about">Read More</a>
+    </div>
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation" style="pointer-events: none;">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section1>
+
+  <script type="text/javascript">
+    const slides = document.querySelectorAll(".video-slide");
+    let currentSlide = 0;
+
+    // Function to change the active slide
+    function changeSlide() {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      currentSlide = (currentSlide + 1) % slides.length;
+
+      slides[currentSlide].classList.add("active");
+    }
+
+    // Set an interval to automatically change the slide every 5 seconds
+    const interval = setInterval(changeSlide, 4000);
+  </script>
+
+
+
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <br><br>
+              <h3>Why Choose the pollution mobile care app ?</h3>
+              <p style="text-align: justify;">
+                Air pollution, especially in urban areas, is a critical issue, with over 60% of pollution in Colombo,
+                Sri Lanka, coming from vehicle emissions. Pollutants like CO2, NO2, CH4, and PM2.5 cause serious health
+                problems, including asthma and heart disease. Real-time monitoring systems are essential to manage air
+                quality and protect public health.</p>
+
+              <p style="text-align: justify;"> Recent IoT advancements have enabled systems to collect real-time
+                pollution data, but challenges include data transmission delays, inaccurate predictions, high
+                infrastructure costs, and lack of user-focused solutions. This research proposes an IoT-based system
+                integrating air quality sensors with machine learning models (Random Forest, Prophet) for accurate
+                predictions and real-time travel recommendations. This cost-effective solution improves urban air
+                quality management and public health outcomes.</p>
+            </div>
+          </div>
+          <div class="col-lg-9 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-text"></i>
+                    <h5>Real-Time IoT Monitoring</h5>
+                    <p>Sri Lanka faces a significant air pollution crisis, primarily driven by vehicular emissions, impacting public health with rising mortality rates. Key pollutants include Particulate Matter (PM), Carbon Dioxide (CO₂), and Methane (CH₄), posing severe health risks. Our IoT-based Air Pollution Monitoring System aims to monitor real-time air quality levels, utilizing Arduino UNO with MQ7 and MQ4 sensors to detect CH₄ and CO gases, alongside an ESP8266 Wi-Fi module to transmit data every minute to a central database. When pollution exceeds safe levels, the system notifies users via mobile application, providing an accessible, portable, and cost-effective solution for air quality management</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-user-voice"></i>
+                    <h5>Pollution Levels Prediction</h5>
+                    <p>Utilization of machine learning techniques to predict air pollution levels relies on historical
+                      data and environmental factors. This process enables the early identification of significant
+                      pollutants, such as CO2, PM2.5, and PM10, through rigorous analysis and feature engineering. Data
+                      cleaning and preparation ensure the integrity of the dataset, which is divided into an 80/20 split
+                      for training and testing to enhance model generalizability.
+                    </p>
+                    <p> Various machine learning models, including Random Forest, XGBoost, and Prophet, are employed to
+                      deliver accurate air quality predictions. This comprehensive approach supports effective
+                      monitoring and management of air quality levels, providing valuable insights for environmental
+                      health and policy-making.</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-navigation"></i>
+                    <h5> Real-Time Pollution Map and Risk Exposure Analysis </h5>
+                    <p>Provide a comprehensive and user-centered solution for monitoring air quality in real time. It includes gathering pollutant data from IoT devices, such as CO2, NO2, and CH4 levels, across various geographic locations. This data is then transmitted through an MQTT Broker and processed to generate real-time, interactive heatmap that visually represents pollution intensity in specific areas. The system continuously analyzes pollution data, checking if pollutant levels exceed safe thresholds. When this happens, it identifies users within affected areas and sends them personalized notifications push to their health conditions via Firebase for Android devices and APNs for iOS devices.
+
+                      The key features that it provides health-focused, user-specific alerts, making it especially beneficial for vulnerable populations, such as those with respiratory conditions, by allowing them to take immediate action based on their locations. Including a location service that periodically updates pollution levels, ensuring that users always have access to the most current data</p>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h5>Alternative Route Suggestion </h5>
+                    <p>In response to Colombo  urban air pollution crisis, we developed a real-time route optimization system to minimize exposure to pollutants. Utilizing a shortest-route algorithm paired with dynamic mapping, this mobile application processes real-time pollution data and calculates the least polluted paths. The backend server continuously updates route options based on pollution and distance. By offering users optimal travel routes, this system supports healthier commuting choices, reducing pollution exposure and contributing to improved public health.
+                    </p>
+                  </div>
+                </div><!-- End .content-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container-fluid">
+        <div class="section-title">
+          <h2>About the Project</h2>
+
+        </div>
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 image-box d-flex justify-content-center align-items-stretch position-relative">
+          </div>
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3 style="text-align: justify; font-size: 19px; line-height: 1.6;">Sri Lanka faces severe air pollution
+              challenges,
+              largely due to vehicular emissions, which threaten public health. To address this, we developed a
+              real-time air quality monitoring
+              system that visualizes pollution via a heatmap. The system inte
+              grates gas sensors monitoring methane (CH), carbon monoxide
+              (CO), carbon dioxide (CO), sulfur dioxide (SO), nitrogen dioxide
+              (NO), and particulate matter (PM.). These sensors are connected
+              to an ESP32 board and Wi-Fi module, strategically deployed
+              around smart buildings. Data is transmitted to a centralized
+              hub using IoT technology, enabling real-time visualization and
+              storage. The processed data is presented through a mobile
+              app developed with Flutter, employing a color-coded scheme to
+              represent pollution levels. This allows users to identify high
+              risk areas and choose less polluted travel routes. In testing,
+              we focused on predicting PM. concentrations in Colombo using
+              machine learning algorithms like Random Forest, XGBoost,
+              and Prophet. The Prophet model was most effective for CO
+              prediction, while Random Forest excelled in predicting PM.
+              concentrations, demonstrating the potential of machine learning
+              in improving air quality forecasts. The system also features a
+              MIMI Air device, which collects, processes, and transmits air
+              quality data every 30 seconds, triggering real-time alerts when
+              pollutant levels exceed WHO thresholds. This provides a cost
+              effective, portable, and reliable solution for managing air quality
+              and safeguarding public health.
+            </h3>
+
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Scope Section ======= -->
+    <section id="scope" class="scope">
+      <div class="container">
+        <div class="section-title">
+          <h2>Research Project Scope</h2>
+
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                  <h5><i class="bx bxs-hand-right"></i> Literature Survey</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h5><i class="bx bxs-hand-right"></i> Research Gap</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h5><i class="bx bxs-hand-right"></i> Research Problem</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                  <h5><i class="bx bxs-hand-right"></i> Objectives</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
+                  <h5><i class="bx bxs-hand-right"></i> Methodology</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-6">
+                  <h5><i class="bx bxs-hand-right"></i> Tools &amp; Technologies</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <h3>Literature Survey</h3>
+                  <div class="col-lg-8 text-center order-1 order-lg-2">
+                    <img src="assets/img/img.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <p style="text-align: justify;">While existing systems have made significant progress, challenges
+                      remain in terms of real-time data accuracy, user-focused solutions, and improving accessibility
+                      for vulnerable groups like school-children. These gaps highlight the need for more integrated
+                      approaches that combine monitoring, prediction, and user-centric tools to effectively manage air
+                      quality and reduce exposure in urban areas.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <h3>Research Gap</h3>
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <p style="text-align: justify;"> Many organizations in Sri Lanka, such as Central
+                      Environmental Authority (CEA), National Building
+                      Research Organization (NBRO), Department of Motor
+                      Traffic (DMT), etc. monitor the ambient air quality in Sri
+                      Lanka. The Central Environmental Authority has deployed
+                      two fixed automated stations deployed in Battaramulla and
+                      Kandy, to monitor the ambient air quality continuously.
+                      The mobile station is currently in progress state. Apart from
+                      this method, the most used monitoring method is the
+                      passive monitoring network which was developed by the
+                      National Building Research Organization and also they are
+                      currently working on a sensor deployment to monitor
+                      ambient air pollution. Therefore, the current existing air
+                      quality monitoring system in Sri Lanka is still in a research
+                      state and need an improvement to increase usability.</p>
+                  </div>
+                  <div class="col-lg-8 text-center order-1 order-lg-2">
+                    <img src="assets/img/my6.avif" alt="" width="400px" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <h3>Research Problem</h3>
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <p class="fst-italic">How can air quality monitoring and prediction be effectively integrated into
+                      an IoT-based system that forecasts environmental risks and minimizes public exposure to
+                      pollutants, particularly in urban areas like Colombo, Sri Lanka? This research seeks to:
+
+                    </p>
+
+                    <ul>
+                      <li> Define air pollution within the context of IoT technology for real-time data collection.
+                      </li>
+                    </ul>
+                    <ul>
+                      <li> Develop a user-friendly pollution map to make data easily understandable.
+
+                      </li>
+                    </ul>
+                    <ul>
+                      <li> Encourage low-pollution travel options based on predictive models.
+
+                      </li>
+                    </ul>
+                    <ul>
+                      <li> Enhance public transparency and awareness about pollution levels.
+
+                      </li>
+                    </ul>
+                    <ul>
+                      <li> Address the impact of air pollution on vulnerable groups, especially schoolchildren.
+                      </li>
+                    </ul>
+
+
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/image3_-_Copy-removebg-preview.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <h3>Research Objectives</h3>
+                  <div class="col-lg-6 details order-2 order-lg-1">
+
+                    <p class="fst-italic">
+                    <h5>Main Objective</h5>
+                    </p>
+                    <p>Minimize the adverse effects of air pollution for the general public population while travelling.
+                    </p>
+
+
+                    <p class="fst-italic">
+                    <h5>Sub Objectives</h5>
+                    </p>
+                    <p>Develop sensor-based devices with a focus on accuracy and value creation on Air pollution.
+                    </p>
+                    <p>Implement future pollution level prediction and forecasting mechanism</p>
+                    <p>Create a user-friendly real-time pollution heatmap accessible to all</p>
+                    <p>Develop real-time route generation based on pollution levels </p>
+                  </div>
+                  <div class="col-lg-6 text-center order-1 order-lg-2">
+
+                    <br><br><br>
+
+                    <img src="assets/img/imag8.avif" alt="" class="img-fluid">
+                    <br>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <h3>Methodology</h3>
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <p>1.Literature Review:Conduct an extensive review of IoT-based air quality monitoring systems,
+                      machine learning models for pollution prediction, and route optimization technologies</p>
+                    <p>2. Requirement Gathering:Engage with environmental experts, urban planners, and public health
+                      officials to gather system requirements and preferences for air quality monitoring and route
+                      suggestion.</p>
+                    <p> 3.Application Design:Develop system architecture, wireframes, and prototypes, integrating air
+                      quality sensors, real-time data transmission, and machine learning algorithms</p>
+                    <p> 4.Development: Utilize agile methodologies to develop the system in phases, incorporating
+                      feedback from stakeholders on sensor integration, heatmap visualization, and route optimization
+                    </p>
+                    <p> 5. Testing:Conduct rigorous testing, including real-time sensor accuracy, system reliability,
+                      usability for travel route suggestions, and prediction accuracy.
+                    </p>
+                    <p> 6. Deployment: Implement the system in an urban area like Colombo, with sensors placed in
+                      strategic locations, and launch the web and mobile platforms for public use.
+                    </p>
+                    <p> 7. Evaluation and Improvement: Gather user feedback and evaluate the system's effectiveness in
+                      reducing pollution exposure and improving travel route decisions, continuously refining the system
+                      based on feedback. </p>
+
+                  </div>
+                  <div class="col-lg-8 text-center order-1 order-lg-2">
+                    <img src="assets/img/diagram.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-6">
+                <div class="row gy-4">
+                  <h3>Tools &amp; Technologies</h3>
+                    <div class="col-lg-4 details order-2 order-lg-1">
+                      <img src="assets/img/img7.jpg" width="1100">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Scope Section -->
+
+    <!-- ======= Milestones Section ======= -->
+    <section id="milestones" class="milestones">
+      <div class="container">
+
+        <div class="row">
+          <!-- <div class="col-lg-4"> -->
+          <div class="section-title">
+            <h2>Milestones</h2>
+          </div>
+          <!-- </div> -->
+
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="assets/pdf/R24-078.pdf" target="_blank">Project Proposal</a></h4>
+                <p>Proposal presentation and the proposal report submission.</p><br>
+                <p>Marks Allocated : 12%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="assets/pdf/Progress Presentation I.pdf" target="_blank">Progress Presentation 1</a></h4>
+                <p>50% progress presentation of the research project.</p><br>
+                <p>Marks Allocated : 15%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="assets/pdf/Progress Presentation 2.pptx" target="_blank">Progress Presentation 2</a></h4>
+                <p>90% progress presentation of the research project.</p><br>
+                <p>Marks Allocated : 18%</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-xl-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="assets/img/file_2024-10-24_12.55.00.png" target="_blank">Demonstration</a></h4>
+                <p>Submission and presentation of the camera-ready research poster. </p><br>
+                <p>Marks Allocated : 10%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="assets/pdf/FInal 2024-078.pptx.pdf" target="_blank">Final Assessment</a></h4>
+                <p>Submission of final reports and the final presentation of the research. </p><br>
+                <p>Marks Allocated : 10%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <h4><a href="assets/img/gallary/img5.mp4" target="_blank">Viva</a></h4>
+                <p>Final viva of the research Commercialization Video with an User Testing and Research Team Member. </p>
+                <br>
+                <p>Marks Allocated : 100%</p>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End Milestones Section -->
+
+
+    <!-- ======= Documentation Section =======-->
+    <section id="documents" class="documents section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Documentation</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-7">
+                  <h5>Project TAF</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-8">
+                  <h5>Proposal Document</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-9">
+                  <h5>Research Logbook</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-10">
+                  <h5>Status Document I</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">
+                  <h5>Status Document II</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-12">
+                  <h5>Final Report</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-7">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Project TAF</h3>
+                    <p>
+                    <h4>
+                      Click Here to View the Project Charter Document</h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/R24-078.pdf" target="_blank"><i class="bx bxs-hand-right"></i>
+                        R24-078_TAF</a></h4>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-8">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Proposal Document</h3>
+                    <p>
+                    <h4>Access the Individual Proposal Documents Using Following Links</h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/project proposal/IT21058028 - Air pollution level prediction.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21058028_Inthikhaff M. I. M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/project proposal/IT21003714-Sensor based device creation and value accuracy (1).pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21003714_RIMAS.M.J.M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/project proposal/IT21057588 - Real-timee route generation based on pollution.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21152832_Kumari J. M. D</a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/project proposal/IT21152832 -Real-time Pollution Map.pdf" target="_blank"><i
+                          class='bx bxs-hand-right'></i> IT21057588_Pasan M.G.R</a></h4>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-9">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Research Logbook</h3>
+                    <p>
+                    <h4>
+                      Access the Research Logbook Documents Using Following Links</h4>
+                    </p>
+                    <p>
+                    <h4><a href="" target="_blank"><i class="bx bxs-hand-right"></i> IT21058028_Inthikhaff M. I. M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="" target="_blank"><i class="bx bxs-hand-right"></i> IT21003714_RIMAS.M.J.M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="" target="_blank"><i class="bx bxs-hand-right"></i> IT21152832_Kumari J. M. D</a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="" target="_blank"><i class="bx bxs-hand-right"></i> IT21057588_Pasan M.G.R</a></h4>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-10">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Status Document I</h3>
+                    <p>
+                    <h4>
+                      Access Status Document_I Using Following Links</h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/status document 1/IT21058028 - Air pollution level prediction.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21058028_Inthikhaff M. I. M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/status document 1/IT21003714-Sensor based device creation and value accuracy (1).pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21003714_RIMAS.M.J.M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/status document 1/IT21152832 -Real-time Pollution Map.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21152832_Kumari J. M. D</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/status document 1/IT21057588 - Real-timee route generation based on pollution.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21057588_Pasan M.G.R</a></h4>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-11">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Status Document II</h3>
+                    <p>
+                    <h4>
+                      Access Status Document_II Using Following Links</h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/status document 2/IT2105828 - Air pollution level prediction 2.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21058028_Inthikhaff M. I. M<a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/status document 2/IT21003714-Sensor based device creation and value accuracy (1).pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21003714_RIMAS.M.J.M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/status document 2/IT21152832-Realtime pollution heatmap Status documents 11.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21152832_Kumari J. M. D</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/status document 2/IT21057588-Real time route generation based on pollution.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21057588_Pasan M.G.R</a></h4>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-12">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Final Reports</h3>
+
+
+                    <p>
+                    <h4>
+                      Access the Individual Final Reports Using Following Links</h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/final report/IT21058028 - Air pollution level prediction.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21058028_Inthikhaff M. I. M<a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/final report/IT21003714-Sensor based device creation and value accuracy.pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21003714_RIMAS.M.J.M</a></h4>
+                    </p>
+                    <p>
+                    <h4><a href="assets/pdf/final report/IT21152832- Realtime Pollution Heatmap.pdf" target="_blank"><i
+                          class='bx bxs-hand-right'></i> IT21152832_Kumari J. M. D</a></h4>
+                    </p>
+                    <p>
+                    <h4><a
+                        href="assets/pdf/final report/IT21057588 - Real-timee route generation based on pollution (1).pdf"
+                        target="_blank"><i class="bx bxs-hand-right"></i> IT21057588_Pasan M.G.R</a></h4>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Documentation Section -->
+
+    <!-- ======= Presentation Section ======= -->
+    <section id="presentations" class="presentations">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+          </div>
+
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <div class="section-title">
+              <h2>Presentations</h2>
+              <p>View Our Presentations Here</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="assets/pdf/proposal presentation.pptx" target="_blank"><i
+                    class='bx bxs-hand-right'></i> Proposal Presentation</a></h4>
+              <p class="description">Click to View the Proposal Presentation</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="assets/pdf/Progress Presentation I.pdf" target="_blank"><i
+                    class='bx bxs-hand-right'></i> Progress Presentation I</a></h4>
+              <p class="description">Click to View the Progress Presentation I - 50% Completion</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="assets/pdf/Progress Presentation 2.pptx" target="_blank"><i
+                    class='bx bxs-hand-right'></i> Progress Presentation II</a></h4>
+              <p class="description">Click to View the Progress Presentation II - 90% Completion</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="assets/pdf/FInal 2024-078.pptx.pdf" target="_blank"><i class='bx bxs-hand-right'></i> Final Presentation</a></h4>
+              <p class="description">Click to View the Final Presentation- 100% Completion</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Presentation Section -->
+
+    <!-- ======= Banner Section ======= -->
+    <section id="banner" class="banner section-bg">
+      <div class="gallery_1" unique-script-id="w-w-dm-id">
+        <div class="responsive-container-block bigContainer">
+          <div class="responsive-container-block Container">
+            <p class="text-blk heading">
+              Gallery
+            </p>
+           
+
+            <div class="gallery">
+              <input type="checkbox">
+              <img src="assets/img/gallary/img1.jpg" >
+              <img src="assets/img/gallary/img3.jpg" >
+              <img src="assets/img/gallary/img2.jpg" >
+              
+             
+            
+            </div>
+<br><br><br><br><br>
+<!-- Video player 1422x800 -->
+<div class="video-container">
+  <video width="600" height="400" controls autoplay>
+    <source src="assets/img/gallary/img5.mp4" type="video/mp4">							  
+    Your browser does not support the video tag.
+  </video>
+  
+  <video width="600" height="400" controls autoplay>
+    <source src="assets/img/gallary/img6.mp4" type="video/mp4">							  
+    Your browser does not support the video tag.
+  </video>  
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End Banner Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="ourteam" class="ourteam">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img//supervisor.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Chathurangika Kahandawaarachchi</h4>
+                <span>SUPERVISOR</span>
+                <p>Lecturer</p>
+                <p>
+                  chathurangika.k@sliit.lk
+                </p>
+                <p>FACULTY OF COMPUTER SYSTEMS ENGINEERING</p>
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"><i
+                      class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/co supervisor.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ms. Pipuni Wijesiri</h4>
+                <span>Co-SUPERVISOR</span>
+                <p>Lecturer</p>
+                <p> pipuni.w@sliit.lk
+                </p>
+                <p>FACULTY OF COMPUTER SYSTEMS ENGINEERING </p>
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"><i
+                      class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/inthiff.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Inthikhaff M. I. M</h4>
+                <span>TEAM Leader</span>
+                <p>IT21058028</p>
+                <p>mhdinthikaff@gmail.com
+                </p>
+                <p>FACULTY OF COMPUTING </p>
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i
+                      class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/2023_06_29_10_28_IMG_4814.JPG" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>RIMAS.M.J.M</h4>
+                <span>TEAM Member</span>
+                <p>IT21003714</p>
+                <p>mohamedrimas11329@gmail.com
+                </p>
+                <p>FACULTY OF COMPUTING </p>
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i
+                      class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/dula.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kumari J. M. D</h4>
+                <span>TEAM Member</span>
+                <p>IT21152832</p>
+                <p>dulanjanikumari784@gmail.com
+                </p>
+                <p>FACULTY OF COMPUTING </p>
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i
+                      class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/ravindu.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Pasan M.G.R</h4>
+                <span>TEAM MEMBER</span>
+                <p>IT21057588</p>
+                <p>ravindupasan34@gmail.com
+                </p>
+                <p>FACULTY OF COMPUTING </p>
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i
+                      class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End about us Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="section-title">
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7985117576864!2d79.97075581477283!3d6.914677495003823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db1a6771c5%3A0x2c63e344ab9a7536!2sSri%20Lanka%20Institute%20of%20Information%20Technology!5e0!3m2!1sen!2slk!4v1654861438602!5m2!1sen!2slk"
+                  width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="info mt-4">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>SLIIT Malabe Campus, New Kandy Rd, Malabe, SriLanka</p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 mt-4">
+                    <div class="info">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>
+                        airpollution@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="info w-100 mt-4">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call:</h4>
+                      <p> +94 775481997</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>Dialysis Care</h3>
+            <p>
+              SLIIT Malabe Campus,
+              New Kandy Rd,
+              Malabe, SriLanka <br><br>
+              <strong>Phone:</strong> +94 775481997<br>
+              <strong>Email:</strong>
+              airpollution@gmail.com
+              <br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#scope">Scope</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Documents</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#documents">Documentation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#presentations">Presentations</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#milestones">Milestones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#banner">Gallary</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#ourteam">Our Team</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Contact US</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">
+                  airpollution@gmail.com
+                </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">+94 77 5481997</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SLIIT Malabe Campus</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+  <br><br><br><br><br>
+  <!-- End Footer -->
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+
+
+
+    <p>&copy;2024 Air Pollution | All Rights Reserved</p>
+  </footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
